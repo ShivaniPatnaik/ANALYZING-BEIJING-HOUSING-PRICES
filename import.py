@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Lasso
 from sklearn.metrics import r2_score
-df=pd.read_csv('new.csv', encoding ='iso-8859-1')
+df=pd.read_csv('data.csv', encoding ='iso-8859-1')
 df.info()
 df = df.drop(['url', 'id', 'price', 'Cid', 'DOM'], axis = 1)
 df.head(5)
